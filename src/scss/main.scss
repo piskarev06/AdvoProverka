@@ -1,0 +1,14 @@
+// базовые подключения
+@import "mixins";
+@import "settings";
+
+/* Blocks */
+@import "./components/header";
+@import "./components/intro";
+@import "./components/question";
+@import "./components/choice";
+@import "./components/reviews";
+@import "./components/statistics";
+@import "./components/faq";
+@import "./components/form";
+@import "./components/footer";

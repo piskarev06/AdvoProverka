@@ -1,0 +1,42 @@
+/* Default styles */
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 17px;
+}
+
+/* Templates */
+
+// .tplTitle

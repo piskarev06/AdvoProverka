@@ -1,0 +1,163 @@
+@import "../mixins/index";
+@import "../mixins/breakpoint";
+
+.intro {
+  padding: 132px 0 161px;
+
+  @include tablet {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  @include small-tablet {
+    padding-top: 110px;
+  }
+  @include mobile {
+    padding: 100px 0;
+  }
+}
+
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__block:first-child {
+  max-width: 560px;
+  width: 100%;
+
+  @include small-tablet {
+    max-width: 100%;
+  }
+}
+
+.intro__block:last-child {
+  overflow: hidden;
+
+  & .intro__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.intro__subtitle {
+  text-transform: uppercase;
+
+  @include title(#0263b2, 21px, 24px, 0 0 5px);
+  @include mobile {
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-bottom: 4px;
+  }
+  @include small-mobile {
+    line-height: 20.8px;
+  }
+}
+
+.intro__title {
+  @include title(black, 51px, 56px, 0 0 34px);
+  @include tablet {
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0 0 20px;
+  }
+  @include mobile {
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+}
+
+.intro__benefits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+  @include small-tablet {
+    display: block;
+
+    max-width: 335px;
+    width: 100%;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.benefits__item {
+  font-size: 18px;
+  line-height: 25px;
+
+  color: black;
+
+  display: flex;
+  align-items: flex-start;
+
+  @include small-tablet {
+    margin-bottom: 20px;
+  }
+  @include mobile {
+    margin-bottom: 15px;
+  }
+  @include small-mobile {
+    margin-bottom: 10px;
+  }
+}
+
+.benefits__icon {
+  margin-right: 5px;
+}
+
+.intro__buttons {
+  @include small-tablet {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 335px;
+    width: 100%;
+  }
+  @include mobile {
+    margin: 0 auto;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 26.5px;
+
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+
+  cursor: pointer;
+  background-color: #b20237;
+
+  border-radius: 5px;
+
+  transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #99002e;
+}
+
+.btn:active {
+  background-color: #800026;
+}
+
+.btn-intro {
+  @include small-tablet {
+    flex: 1 1 51%;
+
+    text-align: center;
+
+    margin-bottom: 11px;
+  }
+}

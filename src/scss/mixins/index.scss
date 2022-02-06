@@ -1,0 +1,11 @@
+/* My mixins */
+
+@mixin title($color, $fz, $lh, $margin) {
+  color: $color;
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: 700;
+  font-family: Play;
+
+  margin: $margin;
+}
