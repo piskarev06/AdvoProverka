@@ -1,0 +1,140 @@
+/* My mixins */
+/* stylelint-disable */
+.choice {
+  background-color: #0263b2;
+  padding: 55px 0;
+}
+
+.choice__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.choice__title {
+  color: #fff;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+  font-family: Play;
+  margin: 0 0 40px;
+}
+@media (max-width: 1024px) {
+  .choice__title {
+    font-size: 32px;
+    line-height: 44.8px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .choice__title {
+    font-size: 27px;
+    line-height: 35.8px;
+  }
+}
+
+.consequences__item {
+  margin-bottom: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.consequences__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.consequences__content-icon {
+  width: 4rem;
+  height: auto;
+  margin-right: 15px;
+}
+@media (min-width: 481px) {
+  .consequences__content-icon {
+    display: none;
+  }
+}
+
+.consequences__item,
+.choice__warning {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.consequences__icon {
+  margin-right: 25px;
+}
+@media (max-width: 480px) {
+  .consequences__icon {
+    display: none;
+  }
+}
+
+.choice__warning {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1e3685;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .choice__warning {
+    line-height: 21.6px;
+  }
+}
+@media (max-width: 360px) {
+  .choice__warning {
+    padding: 20px;
+  }
+}
+
+.warning__icon {
+  margin-right: 15px;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.consequences__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #b20237;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .consequences__title {
+    line-height: 21.6px;
+  }
+}
+
+.consequences__title--black {
+  color: black;
+}
+
+.consequences__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: black;
+}
+@media (max-width: 480px) {
+  .consequences__text {
+    line-height: 22.4px;
+  }
+}
+/*# sourceMappingURL=choice.css.map */

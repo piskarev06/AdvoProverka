@@ -1,0 +1,1 @@
+{"version":3,"sources":["mixins/index.scss"],"names":[],"mappings":"AAAA,cAAA","file":"mixins/index.css","sourcesContent":["/* My mixins */\n\n@mixin title($color, $fz, $lh, $margin) {\n  color: $color;\n  font-size: $fz;\n  line-height: $lh;\n  font-weight: 700;\n  font-family: Play;\n\n  margin: $margin;\n}\n"]}

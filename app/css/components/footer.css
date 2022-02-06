@@ -1,0 +1,222 @@
+/* My mixins */
+/* stylelint-disable */
+.footer {
+  background-color: #1e3685;
+  padding: 40px 0 25px;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 37px;
+}
+@media (max-width: 480px) {
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.footer__logo {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff;
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+@media (max-width: 1024px) {
+  .footer__logo {
+    font-size: 24px;
+    line-height: 29.4px;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 480px) {
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top > nav.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top > nav.nav > .nav__link {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+}
+
+.footer-top > nav.nav > .nav__link:not(:last-child) {
+  margin-right: 14px;
+}
+@media (max-width: 480px) {
+  .footer-top > nav.nav > .nav__link:not(:last-child) {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+.footer__icons-top a {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .footer__icons-top a {
+    display: none;
+  }
+}
+
+.footer__icons a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-medium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+@media (max-width: 480px) {
+  .footer-medium {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-medium-left {
+    text-align: center;
+  }
+}
+
+.footer__addres {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fafafa;
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.addres__icon {
+  margin-right: 8px;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.footer__privacy {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #fafafa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.footer__icons-medium {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  div.footer__icons-medium {
+    display: block;
+  }
+}
+
+.footer__icons-medium {
+  display: none;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .footer__tels {
+    margin-bottom: 20px;
+  }
+}
+
+.tels__item {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.footer__line {
+  color: #fff;
+  opacity: 0.2;
+  margin-bottom: 37px;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__years {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  opacity: 0.3;
+}
+@media (max-width: 480px) {
+  .footer__years {
+    max-width: 210px;
+  }
+}
+
+.footer__ogrn {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  opacity: 0.3;
+}
+/*# sourceMappingURL=footer.css.map */

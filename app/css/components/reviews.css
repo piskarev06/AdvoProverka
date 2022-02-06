@@ -1,0 +1,147 @@
+/* My mixins */
+/* stylelint-disable */
+.reviews {
+  padding: 55px 0 51px;
+}
+
+.reviews__title {
+  color: black;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+  font-family: Play;
+  margin: 0 0 48px;
+}
+@media (max-width: 1024px) {
+  .reviews__title {
+    font-size: 32px;
+    line-height: 44.8px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .reviews__title {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+@media (max-width: 768px) {
+  .reviews__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.list__item {
+  border-radius: 10px;
+  background-color: rgba(230, 235, 245, 0.4);
+  padding: 24px 54px 24px 24px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .list__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33%;
+    flex: 1 1 33%;
+  }
+}
+@media (max-width: 480px) {
+  .list__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list__item:last-child {
+    margin-top: 15px;
+  }
+  .list__item:last-child > .list__text {
+    max-width: unset;
+  }
+}
+@media (max-width: 480px) {
+  .list__item:last-child {
+    margin-top: 0;
+  }
+  .list__item:last-child > .list__text {
+    max-width: 26rem;
+  }
+}
+
+.list__item:not(:last-child) {
+  margin-right: 16px;
+}
+@media (max-width: 480px) {
+  .list__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.list__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0263b2;
+  margin-bottom: 10px;
+}
+
+.list__text {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 26rem;
+  color: black;
+  margin-bottom: 48px;
+  overflow-y: auto;
+  max-height: 140px;
+}
+
+.list__text::-webkit-scrollbar {
+  width: 3px;
+  height: 7px;
+  background-color: #dedede;
+  border-radius: 3px;
+}
+
+.list__text::-webkit-scrollbar-thumb {
+  background-color: #0263b2;
+}
+
+.list__data,
+.list__author {
+  color: #66727f;
+  position: absolute;
+}
+
+.list__data {
+  bottom: 24px;
+  right: 24px;
+}
+
+.list__author {
+  bottom: 24px;
+  left: 24px;
+}
+
+.reviews__line {
+  color: #e2e2e2;
+  margin-bottom: 40px;
+}
+
+.reviews-btn {
+  display: table;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=reviews.css.map */
